@@ -3,6 +3,7 @@ using ApiProject.DtoLayer.CategoryDtos;
 using ApiProject.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace ApiProject.WebApi.Controllers
 {
@@ -57,5 +58,7 @@ namespace ApiProject.WebApi.Controllers
         {
             return Ok(_categoryService.TCategoryCount());
         }
+
+       
     }
 }
